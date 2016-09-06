@@ -10,6 +10,7 @@ import Signin from './components/auth/signin';
 import Signout from './components/auth/signout';
 import requireAuth from './components/auth/require_authentication';
 import Protected from './components/protected/protected';
+import Fields from './components/fields/fields';
 
 import reducers from './reducers';
 
@@ -22,6 +23,7 @@ render(
       <Route path="/" component={App}>
         <Route path="/signin" component={Signin} />
         <Route path="/signout" component={Signout} />
+        <Route path="/fields" component={Fields} />
         <Route path="/protected" component={requireAuth(Protected)} />
       </Route>
     </Router>

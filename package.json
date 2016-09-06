@@ -1,9 +1,9 @@
 {
-  "name": "BigBossCloud CRM",
+  "name": "crm-frontend",
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot",
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
   },

@@ -14,7 +14,6 @@ export default function(ComposedComponent) {
     }
 
     componentWillUpdate(nextProps, nextState) {
-      console.log('really?', this.props.auth.authenticated);
       if(!this.props.auth.authenticated) {
         this.context.router.push('/');
       }

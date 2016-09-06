@@ -39,6 +39,11 @@ class Header extends Component {
 
           <div>
             <ul className="nav navbar-nav">
+              <li className="nav-item">
+                <AppLink
+                  to="/fields"
+                  authLink={false}>Campos</AppLink>
+              </li>
 
               <li className="nav-item">
                 <AppLink
